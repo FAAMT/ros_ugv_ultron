@@ -18,6 +18,9 @@ Note: I made a last minute decision to orient his camera the other way around wh
 
 <br />
 <p align="center">
-<video src="https://user-images.githubusercontent.com/82693292/152689234-091d02ac-c333-45e7-95d0-b993f5c16aa7.MOV" width="50%">
+ caption1 | caption2
+
+:-: | :-:
+<video src='https://user-images.githubusercontent.com/82693292/152689234-091d02ac-c333-45e7-95d0-b993f5c16aa7.MOV' width=180/> | <video src='https://user-images.githubusercontent.com/82693292/152689675-f86b351e-9fe6-4e42-af11-9a726b337ebc.mp4' width=180/>
 </p>
  <br />
