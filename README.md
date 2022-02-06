@@ -27,3 +27,11 @@ Here are some videos of ULTRON moving around the apartment. It is receiving comm
 <video src='https://user-images.githubusercontent.com/82693292/152689234-091d02ac-c333-45e7-95d0-b993f5c16aa7.MOV'> | <video src='https://user-images.githubusercontent.com/82693292/152689675-f86b351e-9fe6-4e42-af11-9a726b337ebc.mp4'>
 
 </div>
+  
+  <div align="center">
+ 
+&nbsp;&nbsp;&nbsp;ULTRON moving around! |  My flatmate publishing velocity.  
+:---:  | ---: 
+<video src='https://user-images.githubusercontent.com/82693292/152689234-091d02ac-c333-45e7-95d0-b993f5c16aa7.MOV'> | <video src='https://user-images.githubusercontent.com/82693292/152689675-f86b351e-9fe6-4e42-af11-9a726b337ebc.mp4'>
+
+</div>
