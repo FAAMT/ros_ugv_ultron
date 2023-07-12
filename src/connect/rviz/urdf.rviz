@@ -1,0 +1,235 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 75
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /TF1
+        - /TF1/Status1
+        - /TF1/Frames1
+      Splitter Ratio: 0.5
+    Tree Height: 298
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 0.800000012
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        chassis_bottom:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        chassis_top:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        connector_bottom_back_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        connector_bottom_back_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        connector_bottom_front_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        connector_bottom_front_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        connector_top_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        connector_top_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheels_back_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheels_back_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheels_front_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheels_front_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        base_footprint:
+          Value: true
+        chassis_bottom:
+          Value: false
+        chassis_top:
+          Value: false
+        connector_bottom_back_left:
+          Value: false
+        connector_bottom_back_right:
+          Value: false
+        connector_bottom_front_left:
+          Value: false
+        connector_bottom_front_right:
+          Value: false
+        connector_top_left:
+          Value: false
+        connector_top_right:
+          Value: false
+        head:
+          Value: false
+        laser_frame:
+          Value: true
+        wheels_back_left:
+          Value: false
+        wheels_back_right:
+          Value: false
+        wheels_front_left:
+          Value: false
+        wheels_front_right:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        chassis_top:
+          chassis_bottom:
+            {}
+          connector_bottom_back_left:
+            {}
+          connector_bottom_back_right:
+            {}
+          connector_bottom_front_left:
+            {}
+          connector_bottom_front_right:
+            {}
+          connector_top_left:
+            {}
+          connector_top_right:
+            {}
+          head:
+            {}
+          laser_frame:
+            {}
+          wheels_back_left:
+            {}
+          wheels_back_right:
+            {}
+          wheels_front_left:
+            {}
+          wheels_front_right:
+            {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: chassis_top
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/MoveCamera
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 1.90400004
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0.0230902825
+        Y: 0.0152254645
+        Z: -0.0440909788
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Pitch: 0.304999888
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 3.01182103
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 800
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000001000000000000016a000002dafc0200000002fb000000100044006900730070006c0061007900730100000028000001b6000000d700fffffffb0000000a0056006900650077007301000001e40000011e000000ad00ffffff00000269000002da00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 985
+  X: 65
+  Y: 24

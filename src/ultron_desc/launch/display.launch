@@ -1,0 +1,17 @@
+<launch>
+
+  <arg name="model" default="$(find ultron_desc)/urdf/ultron.urdf"/>
+  <arg name="gui" default="true" />
+  <arg name="rvizconfig" default="$(find ultron_desc)/rviz/urdf.rviz" />
+
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+  <arg name="use_tf_static" default="false"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+    <param name="use_tf_static" value="$(arg use_tf_static)"/>
+  </node>
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+  <!-- <node name="map_to_chassis" pkg="tf" type="static_transform_publisher" args="0 0 0.5 0 0 0 /chassis_top /map 10" required="true" /> -->
+  <node name="pose_to_chassis" pkg="tf" type="static_transform_publisher" args="0 0 0.5 0 0 0 /chassis_top /slam_out_pose 10" required="true" />
+   <node name="scan_to_chassis" pkg="tf" type="static_transform_publisher" args="0 0 0.5 0 0 0 /chassis_top /laser_frame 10" required="true" />
+</launch>

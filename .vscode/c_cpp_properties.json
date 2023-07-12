@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/faamt/ros_ugv_ultron/devel/include/**",
+        "/home/faamt/catkin_ws/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/faamt/catkin_ws/src/connect/include/**",
+        "/home/faamt/catkin_ws/src/hector_slam/hector_geotiff/include/**",
+        "/home/faamt/catkin_ws/src/hector_slam/hector_map_tools/include/**",
+        "/home/faamt/catkin_ws/src/hector_slam/hector_mapping/include/**",
+        "/home/faamt/catkin_ws/src/hector_slam/hector_marker_drawing/include/**",
+        "/home/faamt/catkin_ws/src/opencv/include/**",
+        "/home/faamt/catkin_ws/src/raspicam_node/include/**",
+        "/home/faamt/catkin_ws/src/rosserial/rosserial_server/include/**",
+        "/home/faamt/catkin_ws/src/rosserial/rosserial_test/include/**",
+        "/home/faamt/catkin_ws/src/stdr_simulator/stdr_gui/include/**",
+        "/home/faamt/catkin_ws/src/stdr_simulator/stdr_parser/include/**",
+        "/home/faamt/catkin_ws/src/stdr_simulator/stdr_robot/include/**",
+        "/home/faamt/catkin_ws/src/stdr_simulator/stdr_samples/include/**",
+        "/home/faamt/catkin_ws/src/stdr_simulator/stdr_server/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

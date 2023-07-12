@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- send urdf to param server -->
+  <param name="ultron_desc" command="$(find xacro)/xacro --inorder '$(find ultron_desc)/urdf/ultron.xacro'" />
+
+</launch>

@@ -1,0 +1,6 @@
+devel_space: /home/faamt/catkin_ws/build/devel
+install: false
+install_space: /home/faamt/catkin_ws/build/install
+profile: default
+source_space: /home/faamt/catkin_ws/build/src
+workspace: /home/faamt/catkin_ws/build

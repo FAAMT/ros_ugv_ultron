@@ -1,0 +1,8 @@
+prefix=/home/faamt/catkin_ws/install
+
+Name: heightmap_generation
+Description: Description of heightmap_generation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
