@@ -1,0 +1,8 @@
+prefix=/home/faamt/ros_uv_ultron/devel
+
+Name: trixy
+Description: Description of trixy
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

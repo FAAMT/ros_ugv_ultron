@@ -1,0 +1,542 @@
+<?xml version='1.0'?>
+
+<robot name="ultron">
+  <gazebo reference="chassis_top">
+      <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <!-- < Materials > -->
+
+  <material name="white">
+    <color rgba="0.8 0.8 0.8 1"/>
+  </material>
+
+  <material name="gold">
+    <color rgba="0.75 0.63 0 1"/>
+  </material>
+
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+
+  <!-- < Chassis Top Parent Link > -->
+
+  <link name='chassis_top'>
+    <pose>0 0 0.1 0 1.57075 0</pose>
+
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='chassis_collision'>
+      <origin xyz="0 0 0.125" rpy=" 0 0 0"/> 
+      <geometry>
+        <cylinder length="0.025" radius="0.15"/>
+      </geometry>
+    </collision>
+
+    <visual name='chassis_visual'>
+      <origin xyz="0 0 0.125" rpy=" 0 0.785375 0"/>
+      <geometry>
+       <cylinder length="0.025" radius="0.15"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+
+  </link>
+
+  <!-- < Chassis Bottom Component > -->
+
+  <link name='chassis_bottom'>
+    <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='chassis_collision'>
+      <origin xyz="0 0 0.0" rpy=" 0 0 0"/> 
+      <geometry>
+        <cylinder length="0.025" radius="0.15"/>
+      </geometry>
+    </collision>
+
+    <visual name='chassis_visual'>
+      <origin xyz="0 0 0.0" rpy=" 0 0 0"/>
+      <geometry>
+       <cylinder length="0.025" radius="0.15"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+
+  </link>
+  
+  <joint name="joint_chassis_top_bottom" type="fixed">
+    <origin xyz="0.0 0.0 0.0075" rpy="0.0 0.0 0.0"/>
+    <parent link="chassis_top"/>
+    <child link="chassis_bottom"/>
+  </joint>
+
+  <!-- < Wheels Back Left Component > -->
+
+  <link name="wheels_back_left">
+    <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='left_wheel_collision'>
+      <origin xyz="0 0 0" rpy=" 0 1.57075 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.05"/>
+      </geometry>
+    </collision>
+
+    <visual name='left_wheel_visual'>
+      <origin xyz="0 0 0" rpy=" 0 1.57075 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.05"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <joint name="joint_chassis_wheels_back_left" type="continuous">
+    <origin xyz="-0.15 0.075 0.0125" rpy=" 0 0 0"/>
+    <parent link="chassis_top"/>
+    <child link="wheels_back_left"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <limit lower="0.0" upper="0.0" effort="50.0" velocity="0.5"/>
+  </joint>
+
+  <!-- < Wheels Front Right Component > -->
+
+  <link name="wheels_back_right">
+    <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='right_wheel_collision'>
+      <origin xyz="0 0 0" rpy=" 0 1.57075 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.05"/>
+      </geometry>
+    </collision>
+
+    <visual name='right_wheel_visual'>
+      <origin xyz="0 0 0" rpy=" 0 1.57075 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.05"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <joint name="joint_chassis_wheels_back_right" type="continuous">
+    <origin xyz="0.15 0.075 0.0125" rpy=" 0 0 0"/>
+    <parent link="chassis_top"/>
+    <child link="wheels_back_right"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <limit lower="0.0" upper="0.0" effort="50.0" velocity="0.5"/>
+  </joint>
+
+  <!-- < Wheels Front Left Component > -->
+
+  <link name="wheels_front_left">
+    <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='left_wheel_collision'>
+      <origin xyz="0 0 0" rpy=" 0 1.57075 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.05"/>
+      </geometry>
+    </collision>
+
+    <visual name='left_wheel_visual'>
+      <origin xyz="0 0 0" rpy=" 0 1.57075 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.05"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <joint name="joint_chassis_wheels_front_left" type="continuous">
+    <origin xyz="-0.15 -0.075 0.0125" rpy=" 0 0 0"/>
+    <parent link="chassis_top"/>
+    <child link="wheels_front_left"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <limit lower="0.0" upper="0.0" effort="50.0" velocity="0.5"/>
+  </joint>
+    
+  <!-- < Wheels Front Right Component > -->
+
+  <link name="wheels_front_right">
+    <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='right_wheel_collision'>
+      <origin xyz="0 0 0" rpy=" 0 1.57075 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.05"/>
+      </geometry>
+    </collision>
+
+    <visual name='right_wheel_visual'>
+      <origin xyz="0 0 0" rpy=" 0 1.57075 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.05"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <joint name="joint_chassis_wheels_front_right" type="continuous">
+    <origin xyz="0.15 -0.075 0.0125" rpy=" 0 0 0"/>
+    <parent link="chassis_top"/>
+    <child link="wheels_front_right"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <limit lower="0.0" upper="0.0" effort="50.0" velocity="0.5"/>
+  </joint>
+
+  <!-- < Bottom Connector Component > -->
+
+  <link name="connector_bottom_back_right">
+  <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='connector_0_collision'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.1" radius="0.005"/>
+      </geometry>
+    </collision>
+
+    <visual name='connector_0_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.1" radius="0.005"/>
+      </geometry>
+      <material name="gold"/>
+    </visual>
+     </link>
+
+  <joint name="joint_chassis_top_bbr_connector" type="fixed">
+    <origin xyz="0.0675 0.0675 0.065" rpy="0.0 0.0 0.0"/>
+    <parent link="chassis_top"/>
+    <child link="connector_bottom_back_right"/>
+  </joint> 
+
+  <!-- < Bottom Connector Component > -->
+
+ <link name="connector_bottom_back_left">
+  <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='connector_1_collision'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.1" radius="0.005"/>
+      </geometry>
+    </collision>
+
+    <visual name='connector_1_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.1" radius="0.005"/>
+      </geometry>
+      <material name="gold"/>
+    </visual>
+  </link>
+
+  <joint name="joint_chassis_top_bbl_connector" type="fixed">
+    <origin xyz="-0.0675 0.0675 0.065" rpy="0.0 0.0 0.0"/>
+    <parent link="chassis_top"/>
+    <child link="connector_bottom_back_left"/>
+   </joint>
+
+<!-- < Bottom Front Left Connector Component > -->
+
+ <link name="connector_bottom_front_right">
+  <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='connector_2_collision'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.1" radius="0.005"/>
+      </geometry>
+    </collision>
+
+    <visual name='connector_2_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.1" radius="0.005"/>
+      </geometry>
+      <material name="gold"/>
+    </visual>
+  </link>
+
+  <joint name="joint_chassis_top_bfr_connector" type="fixed">
+    <origin xyz="-0.0675 -0.0675 0.065" rpy="0.0 0.0 0.0"/>
+    <parent link="chassis_top"/>
+    <child link="connector_bottom_front_right"/>
+  </joint>
+
+  <!-- < Bottom Front Left Connector Component > -->
+
+ <link name="connector_bottom_front_left">
+  <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='connector_3_collision'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.1" radius="0.005"/>
+      </geometry>
+    </collision>
+
+    <visual name='connector_3_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.1" radius="0.005"/>
+      </geometry>
+      <material name="gold"/>
+    </visual>
+  </link>
+
+  <joint name="joint_chassis_top_bfl_connector" type="fixed">
+    <origin xyz="0.0675 -0.0675 0.065" rpy="0.0 0.0 0.0"/>
+    <parent link="chassis_top"/>
+    <child link="connector_bottom_front_left"/>
+  </joint>
+
+  <!-- < Top Right Connector Component > -->
+
+  <link name="connector_top_right">
+  <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='connector_0_collision'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.005"/>
+      </geometry>
+    </collision>
+
+    <visual name='connector_0_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.005"/>
+      </geometry>
+      <material name="gold"/>
+    </visual>
+  </link>
+
+  <joint name="joint_chassis_top_top_right_connector" type="fixed">
+    <origin xyz="0.0675 -0.0675 0.1625" rpy="0.0 0.0 0.0"/>
+    <parent link="chassis_top"/>
+    <child link="connector_top_right"/>
+  </joint>
+
+  <!-- < Top Left Connector Component > -->
+
+
+  <link name="connector_top_left">
+  <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='connector_1_collision'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.005"/>
+      </geometry>
+    </collision>
+
+    <visual name='connector_1_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.005"/>
+      </geometry>
+      <material name="gold"/>
+    </visual>
+  </link>
+
+  <!-- <joint name="joint_chassis_top_top_left_connector" type="fixed">
+    <origin xyz="0.0675 0.0675 0.1625" rpy="0.0 0.0 0.0"/>
+    <parent link="chassis_top"/>
+    <child link="connector_top_left"/>
+  </joint> -->
+
+   <!-- < Head Component > -->
+
+  <joint name="joint_chassis_top_head" type="fixed">
+    <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
+    <parent link="chassis_top"/>
+    <child link="head"/>
+  </joint>
+
+  <link name="head">
+  <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <!-- <inertia
+          ixx="0.0026" ixy="0" ixz="0"
+          iyy="0.00005" iyz="0"
+          izz="0.00005"
+      />
+    </inertial> -->
+    <inertia
+          ixx="0" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"
+      />
+    </inertial>
+
+    <collision name='head'>
+      <origin xyz="0 -0.0675 0.2" rpy=" 0 0 0"/>
+      <geometry>
+          <box size="0.175 0.025 0.025"/>
+      </geometry>
+    </collision>
+
+    <visual name='head'>
+      <origin xyz="0 -0.0675 0.2" rpy=" 0 0 0"/>
+      <geometry>
+          <box size="0.175 0.025 0.025"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+<!-- </robot> -->
+  <!-- <gazebo>
+     <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+     <updateRate>100.0</updateRate>
+     <robotNamespace>/</robotNamespace>
+     <leftFrontJoint>joint_chassis_wheels_front_left</leftFrontJoint>
+     <rightFrontJoint>joint_chassis_wheels_front_right</rightFrontJoint>
+     <leftRearJoint>joint_chassis_wheels_back_left</leftRearJoint>
+     <rightRearJoint>joint_chassis_wheels_back_right</rightRearJoint>
+     <wheelSeparation>0.03</wheelSeparation>
+     <wheelDiameter>0.1</wheelDiameter>
+     <robotBaseFrame>chassis_top</robotBaseFrame>
+     <torque>20</torque>
+     <topicName>cmd_vel</topicName>
+     <broadcastTF>false</broadcastTF>
+   </plugin>
+  </gazebo> -->
+  <gazebo>
+    <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>20.0</odometryRate>
+      <robotBaseFrame>chassis_top</robotBaseFrame>
+      <publishTF>false</publishTF>
+    </plugin>
+  </gazebo>
+
+</robot>
+
