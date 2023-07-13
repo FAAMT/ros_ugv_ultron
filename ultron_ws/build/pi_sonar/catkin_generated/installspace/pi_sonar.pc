@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ros_ugv_ultron/ultron_ws/install
+
+Name: pi_sonar
+Description: Description of pi_sonar
+Version: 0.5.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: diagnostic_updater roscpp sensor_msgs
