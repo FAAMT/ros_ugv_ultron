@@ -1,0 +1,8 @@
+prefix=/home/faamt/ros_ugv_ultron/devel
+
+Name: raspicam_node
+Description: Description of raspicam_node
+Version: 0.5.0
+Cflags: -I/home/faamt/ros_ugv_ultron/devel/include -I/home/faamt/ros_ugv_ultron/src/raspicam_node/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

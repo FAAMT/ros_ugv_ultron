@@ -1,0 +1,8 @@
+prefix=/home/faamt/ros_ugv_ultron/install
+
+Name: ultron_desc
+Description: Description of ultron_desc
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

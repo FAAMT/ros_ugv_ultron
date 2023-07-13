@@ -1,0 +1,4 @@
+	<launch>
+        <node pkg="exmachina" type="exmachina.py" name="exmachina" output="screen">
+	    </node>
+    </launch>

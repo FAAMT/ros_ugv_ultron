@@ -1,0 +1,8 @@
+prefix=/home/faamt/ros_ugv_ultron/install
+
+Name: joint_state_publisher_gui
+Description: Description of joint_state_publisher_gui
+Version: 1.12.15
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
