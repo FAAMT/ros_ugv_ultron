@@ -2,7 +2,7 @@
 ! NOTE: This repository is a work in progress as of July 2023. Will be doing my best to document this project for others with similar interests.
 ```
 # Project Name: ULTRON UGV
-**Project Description:** This repository focuses on documenting a ROS-based UGV system that I developed. The system utilizes a Raspberry Pi (3B+) along with a camera, lidar, and motors to provide basic functionality. The Raspberry Pi runs Ubuntu 16.04 LTS with ROS Kinetic pre-installed via an image from [Ubiquity Robotics](https://learn.ubiquityrobotics.com/kinetic_pi_image_downloads). Follow their documentation to understand more about uploading the image to the Raspberry Pi. 
+**Project Description:** This repository focuses on documenting a ROS-based UGV system that I developed. The system utilizes a Raspberry Pi (3B+) along with a camera, lidar, and motors to provide basic functionality. The Raspberry Pi runs Ubuntu 16.04 LTS with ROS Kinetic pre-installed via an image from [Ubiquity Robotics](https://learn.ubiquityrobotics.com/kinetic_pi_image_downloads). Follow their documentation to understand more about uploading the image to the Raspberry Pi. The workstation also runs Ubuntu 16.04 LTS with ROS Kinetic, which can be setup following this [documentation](https://learn.ubiquityrobotics.com/noetic_quick_start_workstation). 
 
 It is important to note that while I have developed certain components of the software, not all of it is my intellectual property. I am committed to diligently documenting all sources and attributing them appropriately. Here is a quick overview of the list of main electrical and mechanical components used to create ULTRON: </br>
 | Electrical Components     | Price |Image           |
