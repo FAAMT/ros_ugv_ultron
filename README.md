@@ -30,6 +30,7 @@ It is important to note that while I have developed certain components of the so
 | **Mechanical Components**  | **Price** |  **Image** |
 | [Mecanum Wheels x4]() | ~$20 | <img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/1544e2d9-484b-48b8-bd34-0712085d7da8" width=25%>
 | **Total Cost:** | $281 |  Note: some prices are based on wholesale price |
+
 <div align="center">
 </br>ULTRON's chassis frame was designed using Autodesk Fusion 360; here is a rendered representation.
   </br><img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/c452e5b1-3dc1-4a57-9dc6-c04bfd5d3baf"  width=100%>
