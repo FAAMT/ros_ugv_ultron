@@ -16,7 +16,7 @@ To understand the purpose of this project, it is imperative to delve into the in
 | Path Planning | Workstation provides a destination, and the robot finds the shortest and most obstacle-free path from the start to goal state. | [N/A]() |  :soon: |
 
 It is important to note that while I have developed certain components of the software, not all of it is my intellectual property. I am committed to diligently documenting all sources and attributing them appropriately. Here is a quick overview of the list of main electrical and mechanical components used to create ULTRON: </br>
-| Electrical Components     | Price |Image           |
+| Electrical Components | Price | Image |
 | ------------- |------|:-------------:|
 | [64GB Micro SD Card]()| $5 | <img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/18a69191-a289-49ab-9780-1137ee707e0e" width=25%/>
 | [Raspberry Pi 3 Model B+ x1](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/) |$35|<img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/54c797bd-4644-40fe-b0b6-983cc0bacbdb" width=25%>
@@ -43,3 +43,5 @@ It is important to note that while I have developed certain components of the so
   </video>
 </div>
 <br />
+
+## [Project Instructions](https://github.com/FAAMT/ros_ugv_ultron/wiki)
