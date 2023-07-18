@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/ros_ugv_ultron/ultron_ws/install
-
-Name: ubiquity_motor
-Description: Description of ubiquity_motor
-Version: 0.12.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: std_msgs message_runtime

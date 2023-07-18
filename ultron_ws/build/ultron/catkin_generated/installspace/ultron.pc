@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/ros_ugv_ultron/ultron_ws/install
-
-Name: ultron
-Description: Description of ultron
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
