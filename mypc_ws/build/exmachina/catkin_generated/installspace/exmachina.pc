@@ -1,8 +1,0 @@
-prefix=/home/faamt/ros_ugv_ultron/install
-
-Name: exmachina
-Description: Description of exmachina
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
