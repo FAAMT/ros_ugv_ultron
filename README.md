@@ -28,8 +28,9 @@ It is important to note that while I have developed certain components of the so
 |[12V 2000mAh Battery x1](https://www.amazon.com/gp/product/B09LX94XM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)| ~$20 | <img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/8e5b8b3a-481c-46e8-9a53-23128829f246" width=25%>|
 |[LM2596 Adjustable DC-DC Step Down Buck Power Convert Module 4.0-40V Input to 1.25-37V x1](https://www.amazon.com/gp/product/B00LSEBYHU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)| $5 |<img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/6065bf5f-b8d9-4c08-96bb-88fa893609e6" width=25%>|
 | **Mechanical Components**  | **Price** |  **Image** |
-| [Mecanum Wheels x4]() | ~$20 | <img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/1544e2d9-484b-48b8-bd34-0712085d7da8" width=25%>
-| **Total Cost:** | $281 |  Note: some prices are based on wholesale price |
+| [Mecanum Wheels x4]() | ~$20 | <img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/1544e2d9-484b-48b8-bd34-0712085d7da8" width=25%>|
+| [M4 x 60 mm F Hexconnector x6](https://www.amazon.com/gp/product/B0177VG4Q8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) | ~$10 | <img src="https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/0048b11f-3ea0-4f5e-88db-705853951bf2" width=25%> |
+| **Total Cost:** | $291 |  Note: some prices are based on wholesale price |
 
 <div align="center">
 </br>ULTRON's chassis frame was designed using Autodesk Fusion 360; here is a rendered representation.
