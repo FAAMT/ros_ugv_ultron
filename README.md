@@ -1,3 +1,6 @@
+```diff
+! NOTE: This repository is a work in progress as of July 2023. Will be doing my best to document this project for others with similar interests.
+```
 <div align="center">
   &nbsp;&nbsp;&nbsp; DEMO: ULTRON-001
   <br/>** Note: The video is sped up 300% for the sake of brevity. **
