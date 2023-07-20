@@ -4,7 +4,7 @@
 <div class = "outside-container" align="center">
   <a class = "overlay" href = "#div"></a>
   <div class = "text-box">
-  <h1> <a href = "https://github.com/FAAMT/ros_ugv_ultron/wiki">Project Instructions</a></h1>
+  <h1> <a href = "https://github.com/FAAMT/ros_ugv_ultron/wiki">Project Wiki</a></h1>
 </div>
 
 <div align="center">
