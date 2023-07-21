@@ -7,26 +7,26 @@
 // backward, left, right, and for pausing (wait) actions. The test routine showcases the motor functionality 
 // with delays between movements, giving a practical insight into the capabilities of the setup.
 
-// Definitions
-// Pin Out for Motor 1
-const int DC1IN1 = 2;
-const int DC1IN2 = 3;
-const int DC1IN3 = 5;
-const int DC1IN4 = 6;
-const int DC1ENA = 4;
-const int DC1ENB = 7;
+// Project ULTRON: L298N Test Phase
 
-// Pin Out for Motor 2
-const int DC2IN1 = 8;
-const int DC2IN2 = 9;
-const int DC2IN3 = 11;
-const int DC2IN4 = 12;
-const int DC2ENA = 10;
-const int DC2ENB = 13;
+// Definitions for Motor Pins
+const int DC1IN1 = 2;  // Motor 1, Input 1
+const int DC1IN2 = 3;  // Motor 1, Input 2
+const int DC1IN3 = 5;  // Motor 1, Input 3
+const int DC1IN4 = 6;  // Motor 1, Input 4
+const int DC1ENA = 4;  // Motor 1, Enable A
+const int DC1ENB = 7;  // Motor 1, Enable B
+
+const int DC2IN1 = 8;  // Motor 2, Input 1
+const int DC2IN2 = 9;  // Motor 2, Input 2
+const int DC2IN3 = 11; // Motor 2, Input 3
+const int DC2IN4 = 12; // Motor 2, Input 4
+const int DC2ENA = 10; // Motor 2, Enable A
+const int DC2ENB = 13; // Motor 2, Enable B
 
 void setup() {
   Serial.begin(9600);
-  // Set all pins to output mode
+  // Set all motor pins as outputs
   pinMode(DC1IN1, OUTPUT);
   pinMode(DC1IN2, OUTPUT);
   pinMode(DC1IN3, OUTPUT);
@@ -43,147 +43,120 @@ void setup() {
 
 void loop() {
   // Test Routine
-  wait();
-  // 3s delay
-  delay(1500);
-  forward();
-  // 3s delay
-  delay(1500);
-  wait();
-  delay(1500);
-  backward();
-  // 3s delay
-  delay(1500);
-  wait();
-  delay(1500);
-  left();
-  // 3s delay
-  delay(1500);
-  wait();
-  delay(1500);
-  right();
-  // 3s delay
-  delay(1500);
-  wait();
-  delay(1500);
+  wait();              // Stop the motors
+  delay(3000);         // Delay 3 seconds
+
+  forward();           // Move ULTRON forward
+  delay(3000);         // Delay 3 seconds
+
+  wait();              // Stop the motors
+  delay(3000);         // Delay 3 seconds
+
+  backward();          // Move ULTRON backward
+  delay(3000);         // Delay 3 seconds
+
+  wait();              // Stop the motors
+  delay(3000);         // Delay 3 seconds
+
+  left();              // Turn ULTRON left
+  delay(3000);         // Delay 3 seconds
+
+  wait();              // Stop the motors
+  delay(3000);         // Delay 3 seconds
+
+  right();             // Turn ULTRON right
+  delay(3000);         // Delay 3 seconds
+
+  wait();              // Stop the motors
+  delay(3000);         // Delay 3 seconds
 }
 
+// Function to move ULTRON forward
 void forward(void) {
-  // Subroutine to move ULTRON forward
   analogWrite(DC1ENA, 200);
   analogWrite(DC1ENB, 200);
   analogWrite(DC2ENA, 200);
   analogWrite(DC2ENB, 200);
-  
-  // Wheel 1
+
+  // Set appropriate input combinations for each wheel to move forward
   digitalWrite(DC1IN1, HIGH);
   digitalWrite(DC1IN2, LOW);
-
-  // Wheel 2
   digitalWrite(DC1IN3, LOW);
   digitalWrite(DC1IN4, HIGH);
-
-  // Wheel 3
   digitalWrite(DC2IN1, HIGH);
   digitalWrite(DC2IN2, LOW);
-
-  // Wheel 4
   digitalWrite(DC2IN3, LOW);
   digitalWrite(DC2IN4, HIGH);
 }
 
+// Function to move ULTRON backward
 void backward(void) {
-  // Subroutine to move ULTRON backward
   analogWrite(DC1ENA, 200);
   analogWrite(DC1ENB, 200);
   analogWrite(DC2ENA, 200);
   analogWrite(DC2ENB, 200);
 
-  // Wheel 1
+  // Set appropriate input combinations for each wheel to move backward
   digitalWrite(DC1IN1, LOW);
   digitalWrite(DC1IN2, HIGH);
-
-  // Wheel 2
   digitalWrite(DC1IN3, HIGH);
   digitalWrite(DC1IN4, LOW);
-
-  // Wheel 3
   digitalWrite(DC2IN1, LOW);
   digitalWrite(DC2IN2, HIGH);
-
-  // Wheel 4
   digitalWrite(DC2IN3, HIGH);
   digitalWrite(DC2IN4, LOW);
 }
 
+// Function to turn ULTRON left
 void left(void) {
-  // Subroutine to turn ULTRON left
   analogWrite(DC1ENA, 200);
   analogWrite(DC1ENB, 200);
   analogWrite(DC2ENA, 200);
   analogWrite(DC2ENB, 200);
 
-  // Wheel 1
+  // Set appropriate input combinations for each wheel to turn left
   digitalWrite(DC1IN1, HIGH);
   digitalWrite(DC1IN2, LOW);
-
-  // Wheel 2
   digitalWrite(DC1IN3, HIGH);
   digitalWrite(DC1IN4, LOW);
-
-  // Wheel 3
   digitalWrite(DC2IN1, LOW);
   digitalWrite(DC2IN2, HIGH);
-
-  // Wheel 4
   digitalWrite(DC2IN3, LOW);
   digitalWrite(DC2IN4, HIGH);
 }
 
+// Function to turn ULTRON right
 void right(void) {
-  // Subroutine to turn ULTRON right
   analogWrite(DC1ENA, 200);
   analogWrite(DC1ENB, 200);
   analogWrite(DC2ENA, 200);
   analogWrite(DC2ENB, 200);
 
-  // Wheel 1
+  // Set appropriate input combinations for each wheel to turn right
   digitalWrite(DC1IN1, LOW);
   digitalWrite(DC1IN2, HIGH);
-
-  // Wheel 2
   digitalWrite(DC1IN3, LOW);
   digitalWrite(DC1IN4, HIGH);
-
-  // Wheel 3
   digitalWrite(DC2IN1, HIGH);
   digitalWrite(DC2IN2, LOW);
-
-  // Wheel 4
   digitalWrite(DC2IN3, HIGH);
   digitalWrite(DC2IN4, LOW);
 }
 
+// Function to stop ULTRON
 void wait(void) {
-  // Subroutine to stop ULTRON
   analogWrite(DC1ENA, 0);
   analogWrite(DC1ENB, 0);
   analogWrite(DC2ENA, 0);
   analogWrite(DC2ENB, 0);
 
-  // Wheel 1
+  // Set all input combinations for each wheel to stop
   digitalWrite(DC1IN1, LOW);
   digitalWrite(DC1IN2, LOW);
-
-  // Wheel 2
   digitalWrite(DC1IN3, LOW);
   digitalWrite(DC1IN4, LOW);
-
-  // Wheel 3
   digitalWrite(DC2IN1, LOW);
   digitalWrite(DC2IN2, LOW);
-
-  // Wheel 4
   digitalWrite(DC2IN3, LOW);
   digitalWrite(DC2IN4, LOW);
 }
