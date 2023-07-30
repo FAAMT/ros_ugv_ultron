@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-  &nbsp;&nbsp;&nbsp; DEMO: ULTRON-001 Teleoperation
+  &nbsp;&nbsp;&nbsp; DEMO: ULTRON-001
   <br/>** Note: The video is sped up 300% for the sake of brevity. **
   <video src='https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/f8ab93bb-312f-4d7d-95b2-b4253dbb8a0b'> 
   </video>
@@ -16,7 +16,15 @@
 <br />
 
 <div align="center">
-  &nbsp;&nbsp;&nbsp; DEMO: ULTRON-002 Camera + LiDar 
+  &nbsp;&nbsp;&nbsp; DEMO: ULTRON-002 Teleoperation 
+  <br/>** Note: The videos are synced up for the demo, real response times depend on latency. **
+  <video src='https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/68188f14-4b15-4ed2-baf7-63cd570de0a7'> 
+  </video>
+</div>
+<br />
+
+<div align="center">
+  &nbsp;&nbsp;&nbsp; DEMO: ULTRON-003 Camera + LiDar 
   <br/>** Note: The videos are synced up for the demo, real response times depend on latency. **
   <video src='https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/352c45da-def2-4d19-91a8-e9fdb5b482a6'> 
   </video>
