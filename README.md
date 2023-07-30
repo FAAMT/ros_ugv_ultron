@@ -17,7 +17,7 @@
 
 <div align="center">
   &nbsp;&nbsp;&nbsp; DEMO: ULTRON-002 Camera + LiDar 
-  <br/>** Note:  **
+  <br/>** Note: The videos are synced up for the demo, real response times depend on latency. **
   <video src='https://github.com/FAAMT/ros_ugv_ultron/assets/82693292/352c45da-def2-4d19-91a8-e9fdb5b482a6'> 
   </video>
 </div>
