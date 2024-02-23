@@ -1,6 +1,3 @@
-```diff
-! NOTE: This repository is a work in progress as of July 2023. Will be doing my best to document this project for others with similar interests.
-```
 <div class = "outside-container" align="center">
   <a class = "overlay" href = "#div"></a>
   <div class = "text-box">
